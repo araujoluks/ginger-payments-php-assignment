@@ -18,14 +18,14 @@ composer install
 Include composer autoloader:
 
 ```
-include_once 'ginger-payments-php-assignment/vendor/autoload.php';
+include_once "ginger-payments-php-assignment/vendor/autoload.php";
 ```
 
 Then create a new Address Book:
 
 ```
 use \GingerPayments\AddressBook;
-$addressBook = new AddressBook\AddressBook('My Address Book');
+$addressBook = new AddressBook\AddressBook("My Address Book");
 ```
 
 ### Adding a person
