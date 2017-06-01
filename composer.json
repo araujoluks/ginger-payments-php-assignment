@@ -1,0 +1,19 @@
+{
+    "name": "araujoluks/ginger-payments-assignment",
+    "description": "This assignment is part of a selection process for Ginger Payments.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "authors": [
+        {
+            "name": "araujoluks",
+            "email": "luksde.araujo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GingerPayments\\AddressBook\\": "src"
+        }
+    }
+}
