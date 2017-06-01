@@ -84,8 +84,4 @@ composer install --dev
 
 * Find person by email address (can supply any substring, ie. "comp" should work assuming "alexander@company.com" is an email address in the address book) - discuss how you would implement this without coding the solution.
 
-I would use PHP's native function strpos(). For example:
-
-```
-if(strpos($email->getEmail(), $query) === TRUE)
-```
+I would use PHP's native function strpos(). It searches in a string in a similar way to LIKE %STRING% in MySQL. It fits perfectly.
