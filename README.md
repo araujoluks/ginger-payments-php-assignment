@@ -87,5 +87,5 @@ composer install --dev
 I would use PHP's native function strpos(). For example:
 
 ```
-if(strpos($email->getEmail(), $query)
+if(strpos($email->getEmail(), $query) === TRUE)
 ```
