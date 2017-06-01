@@ -72,9 +72,10 @@ $addressBook->getPersonByEmail("luk");
 
 ### Run the tests
 
-You should run this command:
+You should run these commands:
 
 ```
+composer install --dev
 ./vendor/bin/phpunit
 ```
 
