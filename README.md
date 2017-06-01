@@ -44,15 +44,47 @@ To add a group, it's as easy as adding a person:
 $group = $addressBook->addGroup("Just a test group");
 ```
 
-### Find Group's members
+### Find group's members
 
 ```
 $group->getPersons();
 ```
 
-### Find Person's groups
+### Find person's groups
 
 ```
 $person->getGroups();
 ```
 
+### Find a person by name
+
+```
+$addressBook->getPersonByName("Lucas");
+$addressBook->getPersonByName("", "Araujo");
+```
+
+### Find a person by email (substring)
+
+```
+$addressBook->getPersonByEmail("luksde.ara");
+$addressBook->getPersonByEmail("luk");
+```
+
+### Run the tests
+
+You should run this command:
+
+```
+./vendor/bin/phpunit
+```
+
+
+## Design-only question
+
+* Find person by email address (can supply any substring, ie. "comp" should work assuming "alexander@company.com" is an email address in the address book) - discuss how you would implement this without coding the solution.
+
+I would use PHP's native function strpos(). For example:
+
+```
+if(strpos($email->getEmail(), $query)
+```
